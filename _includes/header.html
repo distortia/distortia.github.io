@@ -1,0 +1,29 @@
+<header class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-left">
+          <p class="nav-item title is-2">Nick Stalter</p>
+          <p class="nav-item subtitle is-4 is-hidden-mobile">Software Engineer</p>
+        </div>
+        <span class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+
+        <div class="nav-right nav-menu">
+          {% for page in site.pages %}
+            {% if page.title %}
+            <a class="nav-item" href="/">Home</a>
+            <a class="nav-item" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            <a class="nav-item" href="/NickStalterResume.pdf">Resume</a>
+            {% endif %}
+         {% endfor %}
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+</header>

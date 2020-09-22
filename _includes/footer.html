@@ -1,0 +1,48 @@
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>I use small ads to help with server costs. They should never be intrusive, abusive, or keep you away from the good stuff</p>
+      <p>Please support me by clicking the ads, and report them if they are out of line.</p>
+      <div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- nickstalter -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-1093990846577533"
+             data-ad-slot="8855210408"
+             data-ad-format="auto"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <p>
+        {{ site.description }}
+      </p>
+      <p id="footer-icons">
+        <a href="mailto:{{ site.email }}" class="icon">
+          <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+        </a>
+        {% if site.gitlab_username %}
+          <a href="https://gitlab.com/{{ site.gitlab_username }}" class="icon">
+            <img src="/img/gitlab-logo.png">
+          </a>
+        {% endif %}
+
+        {% if site.twitter_username %}
+          <a href="https://twitter.com/{{ site.twitter_username }}" class="icon">
+           <img src="/img/twitter-logo.png">
+          </a>
+        {% endif %}
+
+        {% if site.linkedin_url %}
+          <a href="{{ site.linkedin_url }}" class="icon">
+            <img src="/img/linkedin-logo.png">
+          </a>
+        {% endif %}
+        <a href="https://alphaity.io" class="icon">
+          <img src="/img/alphaity.png">
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>

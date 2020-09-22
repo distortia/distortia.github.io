@@ -1,0 +1,23 @@
+# Site settings
+title: Nick Stalter | Software Engineer
+email: nickstalter@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Nickstalter.com is a blog focused website where I share my insights, frustrations, and anything else I discover in the development world.
+url: "http://nickstalter.com" # the base hostname & protocol for your site
+twitter_username: ns_mizou
+github_username:  distortia
+gitlab_username:  distortia
+linkedin_url: https://www.linkedin.com/pub/nicholas-stalter/93/205/4b5
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+#Default Settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
