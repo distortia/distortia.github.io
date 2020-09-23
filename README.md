@@ -1,4 +1,3 @@
-`jekyll build --destination build/`
+# Nickstalter.com
 
-
-`ssh gitlab@alphaity.io -i gitlabkey.pem -o StrictHostKeyChecking=no`
+A simple Jekyll blog.
