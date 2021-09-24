@@ -2,3 +2,4 @@ _site
 .sass-cache
 sftp-config.json
 built
+.jekyll-cache/
