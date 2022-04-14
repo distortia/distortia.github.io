@@ -129,6 +129,8 @@ When we refresh the page, the counter should reflect the value in the `sessionSt
 
 This is how to store and restore data in a LiveView using Hooks and `sessionStorage`. If you found it helpful, reach out on twitter or share with your friends!
 
+If you are interested in working with elixir every day, come join my remote team at [InfluxData](https://www.influxdata.com/careers/?gh_jid=3985743)!
+
 Thanks!
 
 ### Links
