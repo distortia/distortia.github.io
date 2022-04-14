@@ -18,7 +18,7 @@ For more information regarding `sessionStorage` and `localStorage` see the [Mozi
 
 Let's clone the demo Phoenix LiveView app. The main branch will only contain the minimal amount of setup without implementing any hooks:
 
-`git pull git@github.com:distortia/counter_example.git`
+`git clone git@github.com:distortia/counter_example.git`
 
 For the complete solution check out the `complete` branch.
 
