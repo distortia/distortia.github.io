@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a software engineer at [InfluxData](https://influxdata.com). Our team uses Elixir/Phoenix on top of Kubernetes. We are always hiring!
+I am a senior software engineer at [Cars.com](https://cars.com). Our team uses Elixir/Phoenix/Liveview and more. We are always hiring!
 
 My hobbies include roasting coffee, music, archery and the outdoors.
 

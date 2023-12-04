@@ -23,25 +23,22 @@
           <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
         </a>
         {% if site.gitlab_username %}
-          <a href="https://gitlab.com/{{ site.gitlab_username }}" class="icon">
-            <img src="/img/gitlab-logo.png">
+          <a href="https://github.com/{{ site.github_username }}" class="icon">
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
           </a>
         {% endif %}
 
         {% if site.twitter_username %}
           <a href="https://twitter.com/{{ site.twitter_username }}" class="icon">
-           <img src="/img/twitter-logo.png">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
           </a>
         {% endif %}
 
         {% if site.linkedin_url %}
           <a href="{{ site.linkedin_url }}" class="icon">
-            <img src="/img/linkedin-logo.png">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
           </a>
         {% endif %}
-        <a href="https://alphaity.io" class="icon">
-          <img src="/img/alphaity.png">
-        </a>
       </p>
     </div>
   </div>
