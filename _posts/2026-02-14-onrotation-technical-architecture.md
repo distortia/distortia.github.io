@@ -117,7 +117,7 @@ Transactional emails share the same layout and brand colors, with inline styles 
 
 ## Blog and Content
 
-The blog is a separate context (`OnRotation.Blog`) with published posts, tags, and an author-scoped admin. Body content is stored as Markdown in the database and rendered with Earmark at request time. A `BodyProcessor` runs after Earmark to replace `{{meal:N}}` shortcodes with rendered meal cards—so authors can embed curated meals in posts, and logged-in users can add them to their library in place.
+The blog is a separate context (`OnRotation.Blog`) with published posts, tags, and an author-scoped admin. Body content is stored as Markdown in the database and rendered with Earmark at request time. A `BodyProcessor` runs after Earmark to replace {% raw %}`{{meal:N}}`{% endraw %} shortcodes with rendered meal cards—so authors can embed curated meals in posts, and logged-in users can add them to their library in place.
 
 The blog admin is a LiveView (`BlogAdminLive`) behind a `require_blog_author` plug. Authors get a list view, create/edit with autosave draft, tag management, and a preview that matches the public layout. Public routes are controller-based: index (optionally filtered by tag), show by slug, and an RSS feed at `/blog/feed.xml`. The sitemap includes blog posts for SEO. Slugs are derived from titles; tags are many-to-many and filterable on the index.
 
