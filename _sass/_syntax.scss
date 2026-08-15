@@ -1,0 +1,33 @@
+.highlight {
+  background: var(--code-bg);
+  border-radius: 0.55rem;
+  overflow-x: auto;
+
+  .c, .c1, .cm, .cs { color: #7a736b; font-style: italic; }
+  .err { color: #a33; }
+  .k, .kd, .kc, .kp, .kr, .ow { color: #2a645c; font-weight: 600; }
+  .o { color: #6f6860; }
+  .kt, .nc { color: #3b5c8a; }
+  .m, .mf, .mh, .mi, .mo, .il { color: #9a5b2a; }
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .s0 { color: #8a3d4a; }
+  .na, .no, .nv, .vc, .vg, .vi { color: #2a645c; }
+  .nf { color: #8a3d4a; }
+  .nt { color: #3b5c8a; }
+  .sr { color: #2a645c; }
+  .ss { color: #7a4aa3; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .highlight {
+    .c, .c1, .cm, .cs { color: #8b8680; }
+    .k, .kd, .kc, .kp, .kr, .ow { color: #8fbfb6; }
+    .o { color: #9a938a; }
+    .kt, .nc, .nt { color: #9bb3d4; }
+    .m, .mf, .mh, .mi, .mo, .il { color: #d4a574; }
+    .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .s0 { color: #d4a0a8; }
+    .na, .no, .nv, .vc, .vg, .vi { color: #8fbfb6; }
+    .nf { color: #d4a0a8; }
+    .sr { color: #8fbfb6; }
+    .ss { color: #c5a6e0; }
+  }
+}

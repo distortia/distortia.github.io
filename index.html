@@ -2,22 +2,41 @@
 layout: default
 ---
 
-<div class="home">
+<section class="intro">
+  <h1>I build small apps.</h1>
+  <p>Usually in Elixir and Phoenix, for problems I actually have. The notes below are how they get made — and some older writing from along the way.</p>
+</section>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
+<section class="products" aria-labelledby="products-heading">
+  <h2 id="products-heading">Things I made</h2>
+  <ul class="product-list">
+    {% for product in site.data.products %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}.html">{{ post.title }}</a>
-        </h2>
+        <a href="{{ product.url }}">{{ product.name }}</a>
+        <p>{{ product.blurb }}</p>
       </li>
     {% endfor %}
   </ul>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<section class="writing" id="writing" aria-labelledby="writing-heading">
+  <h2 id="writing-heading">Writing</h2>
+  {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {% for year in posts_by_year %}
+    <h3 class="year-heading">{{ year.name }}</h3>
+    <ul class="post-list">
+      {% for post in year.items %}
+        <li>
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %-d" }}</time>
+          <div>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% assign summary = post.excerpt | strip_html | normalize_whitespace %}
+            {% if summary.size > 24 %}
+              <p class="excerpt">{{ summary | truncate: 160 }}</p>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</section>

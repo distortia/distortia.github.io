@@ -1,23 +1,61 @@
-# Site settings
-title: Nick Stalter | Lead SeniorSoftware Engineer
+title: Nick Stalter
 email: nickstalter@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Nickstalter.com is a blog focused website where I share my insights, frustrations, and anything else I discover in the development world.
-url: "http://nickstalter.com" # the base hostname & protocol for your site
-twitter_username: ns_mizou
-github_username:  distortia
-gitlab_username:  distortia
+description: >-
+  I build small apps and write about how they get made.
+tagline: Small apps, and notes on how they get made
+url: "https://nickstalter.com"
+github_username: distortia
 linkedin_url: https://www.linkedin.com/pub/nicholas-stalter/93/205/4b5
+timezone: America/New_York
+lang: en_US
 
-# Build settings
 markdown: kramdown
+highlighter: rouge
 permalink: /:title
+excerpt_separator: "\n\n"
 
-#Default Settings
+sass:
+  style: compressed
+  sourcemap: never
+  silence_deprecations:
+    - import
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+author:
+  name: Nick Stalter
+  email: nickstalter@gmail.com
+
+twitter:
+  username: ns_mizou
+  card: summary_large_image
+
+simple_analytics: true
+
+social:
+  name: Nick Stalter
+  links:
+    - https://github.com/distortia
+    - https://www.linkedin.com/pub/nicholas-stalter/93/205/4b5
+
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
+  - scope:
+      path: ""
+      type: "posts"
     values:
       layout: "post"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - .ruby-version
+  - .github

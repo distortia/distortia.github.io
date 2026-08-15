@@ -6,6 +6,7 @@ categories: [product, launch]
 tags: [migrainular, phoenix, svelte, pwa, privacy]
 author: Nick Stalter
 excerpt: "A private, local-first migraine diary you can fill out in about 20 seconds—even on a bad day. Phoenix API, Svelte PWA, no ads, not medical advice."
+image: /img/migrainular-home.png
 ---
 
 I have chronic migraines. Day in, day out. Typically, I am not in the mood to open a spreadsheet, or an app with 1000 fields to enter. I want to tap a number, maybe tap a medication, and lie back down.
